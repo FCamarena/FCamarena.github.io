@@ -1,0 +1,9 @@
+<header id="page-header" class="dark">
+  <div class="wrapper">
+    <h1><a href="{{ site.url | append: site.baseurl }}">{{ site.name }}</a></h1>
+
+    {% if layout.header %}
+      {% include {{ layout.header }} %}
+    {% endif %}
+  </div>
+</header>

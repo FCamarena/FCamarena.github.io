@@ -1,0 +1,233 @@
+/*----------------------------------------------------------------------------*/
+/*------------------------------ Layout and Style ----------------------------*/
+/*----------------------------------------------------------------------------*/
+* {
+  margin: 0;
+  box-sizing: border-box;
+  /* user-select: none; */
+}
+
+html, body {
+  min-height: 100vh;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #202020;
+}
+
+.dark {
+  background-color: #202020;
+  color: #fafafa;
+}
+
+.light {
+  background-color: #fafafa;
+  color: #202020;
+}
+
+.wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: inherit;
+  height: 100%;
+  overflow: hidden;
+}
+
+#page-header,
+#page-body,
+#page-footer {
+  position: relative;
+  width: 100%;
+}
+
+#page-header > .wrapper,
+#page-body > .wrapper,
+#page-footer > .wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  align-content: center;
+  padding: 1.2rem 1.6rem;
+}
+
+#page-header > .wrapper > *,
+#page-body > .wrapper > *,
+#page-footer > .wrapper > * {
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+#page-header {
+  min-height: 10vh;
+  font-size: 1.6rem;
+}
+
+#page-body {
+  min-height: 80vh;
+  font-size: 1.8rem;
+}
+
+#page-body > .wrapper > *{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#page-footer  {
+  min-height: 10vh;
+  font-size: 1.4rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0.5em 0;
+}
+
+#page-body h1 {
+  font-size: 1.8em;
+}
+#page-body h2 {
+  font-size: 1.55em;
+}
+#page-body h3 {
+  font-size: 1.33em;
+}
+#page-body h4 {
+  font-size: 1.11em;
+}
+#page-body h5 {
+  font-size: 1.0em;
+}
+#page-body h6 {
+  font-size: 1.0em;
+  font-weight: inherit;
+}
+
+hr {
+  margin: 1.5em 0;
+}
+
+p, .post-list li {
+  margin: 1em 0;
+}
+
+li {
+  margin: 0.5em 0;
+}
+
+p:first-of-type {
+  margin-top: 0;
+}
+
+p:last-of-type {
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#page-body a {
+  padding-bottom: 0.15em;
+  border-bottom: 0.1em solid #91171F;
+}
+
+#page-body a:hover {
+  color: #91171F;
+}
+
+blockquote {
+  position: relative;
+  width: 90%;
+  margin: 2em auto;
+  padding: 1.0em;
+
+  border-left: 0.33em solid #A20021;
+  border-left: 0.33em solid #91171F;
+  border-radius: 0em 1em 1em 0em;
+  background:#ededed;
+
+  font-size: 1.2em;
+  font-style: italic;
+  line-height: 1.6;
+  color: #606060;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+table {
+  width: 100%;
+  margin: 2em 0;
+  border-collapse: collapse
+}
+
+th, td {
+  padding: 0.28em 0.55em;
+  border-bottom: 0.1em solid #aaaaaa;
+  text-align: left;
+}
+
+dt {
+  font-weight: 700
+}
+
+dd {
+  margin-left: 2em;
+}
+
+.post-date {
+  margin-right: 1em;
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 640px) {
+  #page-header > .wrapper,
+  #page-body > .wrapper,
+  #page-footer > .wrapper {
+    padding: 2.0rem;
+  }
+
+  #page-header {
+    font-size: 1.8rem;
+  }
+
+  #page-body {
+    font-size: 2.0rem;
+  }
+
+  #page-footer  {
+    font-size: 1.6rem;
+  }
+
+  th, td {
+    padding: 0.55em 1.0em;
+    border-bottom: 0.05em solid #aaaaaa;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 800px) {
+  #page-header > .wrapper,
+  #page-body > .wrapper,
+  #page-footer > .wrapper {
+    padding: 2.8rem 3.0rem;
+  }
+
+  #page-header {
+    font-size: 2.0rem;
+  }
+
+  #page-body {
+    font-size: 2.2rem;
+  }
+
+  #page-footer  {
+    font-size: 1.8rem;
+  }
+}

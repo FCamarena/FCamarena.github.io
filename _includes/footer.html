@@ -1,0 +1,9 @@
+<footer id="page-footer" class="dark">
+  <div class="wrapper">
+    {% if layout.footer %}
+      {% include {{ layout.footer }} %}
+    {% endif %}
+
+    {% include copyright.html %}
+  </div>
+</footer>

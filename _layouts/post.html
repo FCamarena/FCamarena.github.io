@@ -1,17 +1,20 @@
 ---
 layout: default
+style: post/style.html
 ---
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
+<main id="page-body" class="light">
+  <div class="wrapper">
+    <article class="post">
+      <h1 class="post-title">{{ page.title }}</h1>
 
-  <div class="entry">
-    {{ content }}
+      <p class="post-date" >
+        <time datetime="{{ page.date }}">
+          {{ page.date | date: '%d-%m-%Y'}}
+        </time>
+      </p>
+
+      {{ content }}
+    </article>
   </div>
-
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
-
-  {% include disqus.html %}
-</article>
+</main>
