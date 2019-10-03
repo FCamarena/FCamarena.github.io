@@ -1,42 +1,9 @@
-<!DOCTYPE html>
-<html lang="en-US">
+---
+layout: base
+---
 
-<head>
-  {% if page.title %}
-  <title>{{ page.title }} | {{ site.name }}</title>
-  {% else %}
-  <title>{{ site.name }}</title>
-  {% endif %}
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl }}" />
-  {% if layout.style %}
-    {% include {{ layout.style }} %}
-  {% endif %}
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300italic,400italic,600italic,700italic,800italic,100,200,300,400,600,700,800" rel="stylesheet" />
-</head>
+<div class="intro-header"></div>
 
-<body class="">
-  <!-- Wrapper -->
-  <div id="page-wrapper" class="wrapper">
-    <div id="bgd-wrapper" class="wrapper">
-
-      <!-- Header -->
-      {% include header.html %}
-
-      <!-- Main -->
-      {{ content }}
-
-      <!-- Footer -->
-      {% include footer.html %}
-
-    </div>
-  </div>
-
-  <!-- Scripts -->
-  <!-- <script src="/assets/js/util.js"></script> -->
-  {% if layout.script %}
-    {% include {{ layout.script }} %}
-  {% endif %}
-</body>
-</html>
+<div role="main" class="container">
+  {{ content }}
+</div>
