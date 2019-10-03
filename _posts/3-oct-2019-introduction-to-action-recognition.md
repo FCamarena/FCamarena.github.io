@@ -1,6 +1,6 @@
 ---
 layout: post
-title: First post!
+title: Introduction to Action Recognition
 image: /img/hello_world.jpeg
 ---
 
