@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Introduction to Action Recognition
-# image: /img/hello_world.jpeg
+image: /img/ComputerVision.png
 ---
 
 When I was a child I dreamed about a world where machines adquire "super-powers" (See image 1.0). 
