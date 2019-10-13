@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Beautiful Jekyll | MIT license | Copyright Dean Attali 2016 -->
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+
+  <title>Introduction to Action Recognition</title>
+
+  <meta name="author" content="Fernando Camarena" />
+
+  
+
+  <link rel="alternate" type="application/rss+xml" title="FCamarena - My personal website" href="http://0.0.0.0:4000/feed.xml" />
+
+  
+
+  
+
+  
+
+
+  
+    
+      
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" />
+
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    
+      <link rel="stylesheet" href="/css/bootstrap-social.css" />
+    
+      <link rel="stylesheet" href="/css/main.css" />
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+    
+  
+
+  
+
+  
+
+  
+
+    <!-- Facebook OpenGraph tags -->
+  
+
+  
+  <meta property="og:title" content="Introduction to Action Recognition" />
+  
+
+   
+  <meta property="og:description" content="When I was a child I dreamed about a world where machines adquire “super-powers” (See image 1.0). To day, I’m working hard to make that dream a reality… but how? —- A draw of a Super Machine —- May be, you have heard about Artificial Intelligence (AI), but what about...">
+  
+
+
+  <meta property="og:type" content="website" />
+
+  
+  <meta property="og:url" content="http://0.0.0.0:4000/2019-10-03-introduction-to-action-recognition/" />
+  <link rel="canonical" href="http://0.0.0.0:4000/2019-10-03-introduction-to-action-recognition/" />
+  
+
+  
+  <meta property="og:image" content="http://0.0.0.0:4000/img/avatar-icon.png" />
+  
+
+
+  <!-- Twitter summary cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@" />
+  <meta name="twitter:creator" content="@" />
+
+  
+  <meta name="twitter:title" content="Introduction to Action Recognition" />
+  
+
+  
+  <meta name="twitter:description" content="When I was a child I dreamed about a world where machines adquire “super-powers” (See image 1.0). To day, I’m working hard to make that dream a reality… but how? —- A draw of a Super Machine —- May be, you have heard about Artificial Intelligence (AI), but what about...">
+  
+
+  
+  <meta name="twitter:image" content="http://0.0.0.0:4000/img/avatar-icon.png" />
+  
+
+  
+
+  
+
+</head>
+
+
+  <body>
+
+    
+
+  
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button><a class="navbar-brand" href="http://0.0.0.0:4000/">FCamarena</a></div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+          <li><a href="/aboutme">About Me</a></li>
+          <li><a href="">Projects</a></li></ul>
+    </div>
+
+	
+	<div class="avatar-container">
+	  <div class="avatar-img-border">
+	    <a href="http://0.0.0.0:4000/">
+	      <img class="avatar-img" src="/img/avatar-icon.png" />
+		</a>
+	  </div>
+	</div>
+	
+
+  </div>
+</nav>
+
+
+    <!-- TODO this file has become a mess, refactor it -->
+
+
+
+
+
+<header class="header-section ">
+
+<div class="intro-header no-img">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-heading">
+          <h1>Introduction to Action Recognition</h1>
+		  
+		  
+		  
+		  <span class="post-meta">Posted on October 3, 2019</span>
+		  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+      
+
+      <article role="main" class="blog-post">
+        <p>When I was a child I dreamed about a world where machines adquire “super-powers” (See image 1.0). 
+To day, I’m working hard to make that dream a reality… but how?</p>
+
+<p>—- A draw of a Super Machine —-</p>
+
+<p>May be, you have heard about Artificial Intelligence (AI), but what about Computer Vision?. That sound a very creepy thing but its only aims is to give a computer eyes.</p>
+
+<p>Computer Vision has a lot of application. Nevertheless, in this post, I’ll only focus on Action Recognition, which in simple words is to determinme what a subject is doing in a given video. Yes, like Big brother (See image 2.0)</p>
+
+<p>— A crazy ilustration about computer vision —-</p>
+
+<p>This is not a trivial task (Fortunaly?) but possible through  Machine Learning and Computer Vision techniques. Let’s begin with a brief explanation about what an action is.</p>
+
+<p>Human Activity Recognition (HAR)[REF] can be categorized into 3 levels: Gestures, Actions and Interactions. A gesture is an atomic movement, an action is a sequence of gestures with an associated message, and, interactions are actions in which two or more agents are involved. A more compresive explanation is showed in figure 3.0</p>
+
+<p>— HAR: A very simple image that explain it—–</p>
+
+<p>Action Recognition is formed by 2 steps: Action representation and Action Classification. The first one is how our computer will interpreted things and the second one is how the computer manipulate theses things in other to give an answer.</p>
+
+<p>Action representation have been approaches in 3 different ways: Global, local and depth-based representation [REF]. Global representations have become obsolete due to high sensitivity to noise, occlusions and changing viewpoints. Depth-based representations require information about the object depth, which can be obtained by means of special cameras like Microsoft Kinect.</p>
+
+<p>— Example of Global representation —-
+— Example of depth based representation —</p>
+
+<p>Local representations [REF ]have been the most used and aim to describe a video through a collection of local descriptors sampled densely or by locating points of interest. Then, local features are combined by a feature encoding approach.</p>
+
+<p>— Example of Local representation —-</p>
+
+<p>Interest points detection seeks for key elements of the video-frame, compared to dense sampling that places points without any semantics.  There are several approaches [REF] 
+that have been used to locate these key points, but one of the most widely used is the 3d space time interest points (STIP) [REF], which is an extension of the Harris detector [REF].</p>
+
+<p>Detecting interesting points permits to achieve remarkable performance, but one of the common problems[REF] is finding a stable amount of points. Also, many of them can be false alarms.</p>
+
+<p>Once the points are sampled, the next step is to describe them. Scale-invariant feature transform (SIFT) proposed by Lowe et al.[REF] is widely used due to its robustness to noise, lighting changes, viewpoint changes and its scale and rotation invariance [REF]. A extended 3D version is presented by Scovanner et al [REF].</p>
+
+<p>The speed-up robust features (SURF) [REF] is another acknowledged approach for its efficiency. An extended 3D version is presented in [REF].</p>
+
+<p>Dense trajectories is another well-know approach used is the dense trajectories [REF] approach that achieves high performance through the descriptors HOG [REF], HOF [REF], MBH [REF],and the displacements of the trajectory (DT)[REF]. Shi et al. [REF] present sequential deep trajectory descriptor [REF] to capture long-term motion information.</p>
+
+<p>The next step is feature encoding, which  the key idea is to discretize the entire space of local features extracted from a training set. Bag-of-words (BoW)[REF], fisher vector (FV) [REF], stacked fisher vector (SFV) [REF], vector quantization (VQ) [REF], vector of locally aggregated descriptos (VLAD) [REF], super vector encoding (SVC) [REF]. Acording to [REF] the best performance is achieved by using Dense trajectories with SFV.</p>
+
+<p>Action classification has been performed through diverse approaches [REF], but discriminative methods are the most commonly used. support vector machines (SVM) [REF], conditional Random Fields (CRF)[REF] and deep learning architectures [REF] are examples of them.</p>
+
+<p>On the other hand, deep learning architectures \cite{zhang2017review} like deep neural networks (DNNs)[REF], convolutional neural networks (CNNs) [REF] and recurrent neural networks (RNNs) [REF] have achieved high accuracy values and even many of them perform the action recognition task in real time [REF]. Unlike traditional machine learning methods, deep neural networks has the ability to learn representations automatically.</p>
+
+<p>Current research focuses on improving classification performance by combining CNN features with hand-crafted features. Li et al. [REF] proposed to combine CNN with VLAD to caputre mid-range and long-range dynamics. Wang et al.[REF] proposed  the deep-convolutional descriptor which combine dense trajectories with CNN features. Chéron et al. [REF] proposed a Pose-based Convolutional Neural Network descriptor and demonstrate that  CNN approaches are complementary to Hand-crafted approaches like dense trajectories.</p>
+
+<p>Figure 4 sumarized all the explained:</p>
+
+<p>————-Super Figure—</p>
+
+
+      </article>
+
+      
+
+      
+        <!-- Check if any share-links are active -->
+
+
+
+
+
+      
+
+      <ul class="pager blog-pager">
+        
+        
+      </ul>
+
+      
+        <div class="disqus-comments">
+          
+        </div>
+          
+        <div class="staticman-comments">
+          
+
+        </div>
+        <div class="justcomments-comments">
+          
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+
+    <footer>
+  <div class="container beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links"><li><a href="mailto:fernando@camarenat.com" title="Email me"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">Email me</span>
+              </a>
+            </li><li><a href="https://github.com/FCamarena" title="GitHub"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">GitHub</span>
+              </a>
+            </li></ul>
+      <p class="copyright text-muted">
+      Fernando Camarena
+      &nbsp;&bull;&nbsp;
+      2019
+
+      
+      &nbsp;&bull;&nbsp;
+      <a href="http://0.0.0.0:4000/">fernando@camarenat.com</a>
+      
+
+      
+      </p>
+          <!-- Please don't remove this, keep my open source work credited :) -->
+    <!-- <p class="theme-by text-muted">
+      Theme by
+      <a href="https://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
+    </p> -->
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+    
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script>
+      	if (typeof jQuery == 'undefined') {
+          document.write('<script src="/js/jquery-1.11.2.min.js"></scr' + 'ipt>');
+      	}
+      </script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script src="/js/bootstrap.min.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script src="/js/main.js"></script>
+    
+  
+
+
+
+
+
+
+  
+  </body>
+</html>
