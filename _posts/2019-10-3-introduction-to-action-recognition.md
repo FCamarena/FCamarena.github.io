@@ -21,6 +21,7 @@ This is not a trivial task (Fortunaly?) but possible through  Machine Learning a
 ### Human Activity Recognition
 Human Activity Recognition (HAR)[REF] can be categorized into 3 levels: Gestures, Actions and Interactions. A gesture is an atomic movement, an action is a sequence of gestures with an associated message, and interactions are actions in which two or more agents are involved. A more compresive explanation is showed in figure 3.0
 
+
 --- HAR: A very simple image that explain it----- 
 ### Action Representation
 Action Recognition is formed by 2 steps: Action representation and Action Classification. The first one is how our computer will interpreted things and the second one is how the computer manipulate theses things in order to give an answer. 
