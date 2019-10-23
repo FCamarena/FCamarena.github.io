@@ -4,13 +4,13 @@ title: Introduction to Action Recognition
 image: /img/ComputerVision.png
 ---
 
-When I was a child I dreamed about a world where machines adquire "super-powers" (See image 1.0). 
-Today, I'm working hard to make that dream a reality... but how?
+When I was a child I dreamed about a world where machines adquire "super-powers". 
+Today, I'm working hard to make that dream a reality, but how?
 
 ![super machine](/img/ComputerVision.png){:class="img-responsive"}
 Maybe, you have heard about Artificial Intelligence (AI), but what about Computer Vision?. That sound a very creepy thing but its only aims is to give a computer eyes. 
 
-Computer Vision has a lot of application. Nevertheless, in this post, I'll only focus on Action Recognition, which in simple words is to determinme what a subject is doing in a given video. Yes, like Big brother (See image 2.0)
+Computer Vision has a lot of application. Nevertheless, in this post, I'll only focus on Action Recognition, which in simple words is to determine what a subject is doing in a given video. Yes, like Big brother (See image 2.0)
 
 --- A crazy ilustration about computer vision ----
 
