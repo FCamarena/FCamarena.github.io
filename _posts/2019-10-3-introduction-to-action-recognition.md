@@ -7,20 +7,21 @@ image: /img/ComputerVision.png
 When I was a child I dreamed about a world where machines acquire "super-powers". 
 Today, I'm working hard to make that dream a reality, but how?
 
----
 ![super machine](/img/ComputerVision.png){:class="img-responsive"}
----
 
 Maybe, you have heard about Artificial Intelligence (AI), but what about Computer Vision?. That sounds a creepy thing but its only aim is to give computer eyes. 
 
-Computer Vision has a lot of applications. Nevertheless, in this post, I'll only focus on Action Recognition, which in simple words is to determine what a subject is doing in a given video. Yes, like Big brother. 
+Computer Vision has a lot of applications. Nevertheless, in this post, I'll only focus on Action Recognition, which in simple words is to determine what a subject is doing in a given video. 
 
 ![super machine](/img/CV.png){:class="img-responsive"}
 
-This is not a trivial task (Fortunately?) but possible through  Machine Learning and Computer Vision techniques. Let's begin with a brief explanation about what an action is. 
+This is not a trivial task (Fortunately?) but possible through  Machine Learning and Computer Vision techniques. Let's begin with a brief explanation about of what an action is. 
 
 ### Human Activity Recognition
-Human Activity Recognition (HAR)[REF] can be categorized into 3 levels: gestures, actions, and interactions. A gesture is an atomic movement, an action is a sequence of gestures with an associated message, and interactions are actions in which two or more agents are involved. A more comprehensive explanation is shown in figure 3.0
+Human Activity Recognition (HAR) can be divided into 3 levels: gestures, actions, and interactions. The basic abstraction leve is gestures that are atomic body movement. The next level are actions which are formed by a sequence of gestures and can has a specific meaning.  Finally, interactions are actions where two or more agents are involved. 
+
+![super machine](/img/HAR.png){:class="img-responsive"}
+
 
 
 ### Highlights
