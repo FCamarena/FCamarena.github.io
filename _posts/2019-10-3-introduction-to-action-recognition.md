@@ -18,11 +18,30 @@ Computer Vision has a lot of applications. Nevertheless, in this post, I'll only
 This is not a trivial task (Fortunately?) but possible through  Machine Learning and Computer Vision techniques. Let's begin with a brief explanation about of what an action is. 
 
 ### Human Activity Recognition
-Human Activity Recognition (HAR) can be divided into 3 levels: gestures, actions, and interactions. The basic abstraction leve is gestures that are atomic body movement. The next level are actions which are formed by a sequence of gestures and can has a specific meaning.  Finally, interactions are actions where two or more agents are involved. 
+Human Activity Recognition (HAR) can be divided into 3 levels: gestures, actions, and interactions. The basic abstraction leve is gestures that are atomic body movement. The next level are actions which are formed by a sequence of gestures and can has a specific meaning.  Finally, interactions are actions where two or more agents are involved.
 
 ![super machine](/img/HAR.png){:class="img-responsive"}
 
+### Action Recognition 
 
+Now, that we know what is an actions, lets review how can we recognize actions. This process is divided into 2  substasks: Action representation and Action Recognition. 
+
+#### Action Representation
+
+Action representation is the way the computer interprets an image. There is 3 main groups: global, local and depth-based representations.
+
+Global representations extract from a video a single global feature. A common technique used is background subtraction to obtain a subject-silhouette. This types of representations are not longer used because the high sensitivity to noise, conclusions and rotation-scale perspectives. 
+
+Depth-based approaches take advantage of the capability to measure distances and object depths of special cameras, like Microsoft Kinect. Depth maps and skeleton-based representations are common approaches in this representation. 
+
+Finally, local representations use a collection of descriptors applied locally to a set of points. This methods are widely used tanks to its robustness to noise and partial occlusions. 
+
+![super machine](/img/AR.png){:class="img-responsive"}
+
+Let’s go deeper with local representation. To achieve it we need to apply 
+
+
+Points can be placed densely (without any semantic) or by locating points of interest. 
 
 ### Highlights
 - An action is a sequence of gestures with an associated meaning 
