@@ -36,65 +36,38 @@ Depth-based approaches take advantage of the capability to measure distances and
 
 Finally, local representations use a collection of descriptors applied locally to a set of points. This methods are widely used tanks to its robustness to noise and partial occlusions. 
 
-![super machine](/img/AR.png){:class="img-responsive"}
+![super machine](/img/AR.png){:class="img-responsive"} 
 
-Let’s go deeper with local representation. To achieve it we need to apply 
+Let’s go deeper with local representation. To achieve it we need to perform 3 steps: sampling, description and encoding. 
+Sampling can be by placing points densely (without any semantic) or by locating points of interest. The most common for points location are space-time interest points (STIP), 3D space-time interest points (3DSTIP) and Harris corner detector. Finding points of interest may improve the classification performance, but there are some problems associated with parameters used as the number de points to be located and its representativeness. 
+
+The next step is to describe the video at the position desired. Some widely used methods are Scale-invariant feature transform (SIFT), 3D Scale-invariant feature transform (3DSIFT), speed-up robust features (SURF), 3D speed-up robust features (3DSURF), histogram of oriented gradients (HOG), histogram of oriented flow (FLOW), motion boundary descriptors (MBH), and trajectories displacements (DT). We can combine as many descriptors as we want to improve classification performance, for example, Improved Dense Trajectories implements HOG, HOF, MBH and trajectories displacements to classify actions. 
 
 
-Points can be placed densely (without any semantic) or by locating points of interest. 
+Feature encoding aims to discretize the space of local features extracted from the training set. Common methods are bag-of-words (BoW), fisher vector (FV), stacked fisher vector (SFV), vector quantization (VQ), vector of locally aggregated descriptors (VLAD) and super vector encoding (SVC). SFV proved to be a excellent option for this problem. 
 
-### Highlights
-- An action is a sequence of gestures with an associated meaning 
-- Action Recognition can be divided into 2 main tasks: Action Recognition and Action representation
-### Action recognition is divided into:
-	- Global representations 
-		- Not robust against occlusion, scale, rotation and lighting variability. 
-		- Background subtractions is a common technique. 
-	- Depth-based representations
-		- It takes advantages of the camera capabilities to measure the distance between objects. 
-	- **Local representations.**
-		-  Local representations are the most used
-		-  Use a set of descriptors that act locally on an image. 
-		-  They can be divided into three steps: 
-			-  Sampling
-				-  Can be done: 
-					-  Densely 
-						-  by placing points without any semantics. 
-					-  Detecting interesting points
-						-  STIP
-			-  Description
-			-  Feature encoding
- 
-Briefly introduce the main approaches to represent an Action (Global Representations, Local Representations, and Depth-based)
-We delved deeper into the local representations and divided them into three steps: 
-Sampling
-We established that the sampling step can be done in a dense manner or by locating interest points.  
-We showed that the most common methods for locating interest points are:
-Harris Corner Detector, Harris et al., 1988
-Space-time interest points (STIP),  Laptev et al., 2005
-3DSTIP, Blank et al., 2005
-We also point out that a common problem in these methods is the number of points to be used and their representativeness 
-Description
-we stated that the description step can be done using the next methods: 
-Scale-invariant feature transform (SIFT), Lowe et al., 2004
-3D SIFT, Scovanner et al., 2007
-Speed-up robust features (SURF),  Bay et al. 2008
-3DSURF, Willems et al., 2008
-HOG, Dalal et al., 2005
-HOF. Dalal et al. 2006
-MBH, Wang et al.  2011
-We indicated that is possible to combine descriptors such as the Dense Trajectories approach. 
-Feature encoding
-For feature encoding we stated the existence of the following methods:
-Improved Bag-of-words (BoW), Chang et al. 2017
-Fisher Vector (FV), Perronnin et al. 2010
-Stacked Fisher Vector (FV), Peng et al. 2014
-Vector Quantization (VQ), Sivic et al., 2003
-Vector of locally aggregated descriptors (VLAD), Jégou et al. 2010
-Super vector encoding (SVC), Zhou et al., 2010
-We categorized Action Classification in 3 approaches: Template-based, generative models and Machine learning models. We briefly define each of them. 
-We highlighted that Deep-learning architectures are capable of learning representations. 
-Finally, we emphasized that state-of-the-art methods focus on combining hand-crafted approaches with  deep learning features, such as the works of 
-Wang et al. (2015). Action recognition with trajectory-pooled deep-convolutional descriptors.
-Chéron et al. (2015) Pose-based CNN features for action recognition
+This techniques are know as handcrafted features. Nevertheless, recent works are implemented convolutional neural network features that are learned automatically. 
+
+##### Action Classification 
+
+As action representation, action classification has been performed by 3 main approaches: template-based, generative and discriminative models. 
+
+Template-based are the simplest one. In this method we have a predefined set of templates that we use to find the most similar to the descriptor to be classified. 
+
+Generative models are based on probability and statistic techniques. Within this models we found classic bayesian Networks and Markova chains. 
+
+Finally, discriminative models implement machine learning techniques like support vector machines (SVM), conditional random fields (CFR), deep neural networks (DNNs), convolutional neural networks (CNNs), and recurrent neural networks (RNNs). Unlike traditional machine learning methods, deep learning architectures can learn representations by itself. 
+
+##### State of the art
+
+State-of-the-art methods focus on improving classification accuracy by combining CNN features with hand-crafted features. Some highlighted methods are the one of Li et al. that proposed to combine CNN with VLAD to capture mid-range and long-range dynamics, the one of  Wang et al. which introduced the deep-convolutional descriptor that combines dense trajectories with CNN features. Also, Chéron et al. introduced a Pose-based Convolutional Neural Network descriptor that proved that CNN approaches are complementary to hand-crafted approaches. 
+
+
+### conclusions
+
+Action recognition is active field with ongoing developments. Up to now, we divide it in two tasks: action representation and action classification where local representations and machine learning techniques are the most used respectively. 
+
+State-of-the-art methods combine handcrafted features with CNN ones. The next figure summarize the explained. 
+
+![super machine](/img/Summary.png){:class="img-responsive"} 
 
