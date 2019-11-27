@@ -4,8 +4,6 @@ title: Introduction to Action Recognition
 image: /img/CV.png
 ---
 
-![super machine](/img/ComputerVision.png){:class="img-responsive"}
-
 <div style="text-align: justify">
 
 Computer Vision has a lot of applications. Nevertheless, in this post, I'll only focus on Action Recognition, which in simple words is to determine what a subject is doing in a given video. 
