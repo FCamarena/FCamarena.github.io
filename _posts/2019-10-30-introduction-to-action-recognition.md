@@ -24,7 +24,7 @@ This is not a trivial task (Fortunately?) but possible through  Machine Learning
 </div>
 ### Human Activity Recognition
 <div style="text-align: justify">
-Human Activity Recognition (HAR) can be divided into 3 levels: gestures, actions, and interactions. The basic abstraction level is gestures that are atomic body movements. The next level is actions that are formed by a sequence of gestures and can have a specific meaning.  Finally, interactions are actions where two or more agents are involved.
+Human Activity Recognition (HAR) can be divided into 3 levels: gestures, actions, and interactions. The basic abstraction level is gestures that are atomic body movements. The next level is action that are formed by a sequence of gestures and can have a specific meaning.  Finally, interactions are actions where two or more agents are involved.
 </div>
 ![super machine](/img/HAR.png){:class="img-responsive"}
 
