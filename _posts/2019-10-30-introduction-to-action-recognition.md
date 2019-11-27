@@ -1,18 +1,12 @@
 ---
 layout: post
 title: Introduction to Action Recognition
-image: /img/ComputerVision.png
+image: /img/CV.png
 ---
-
-<div style="text-align: justify">
-When I was a child I dreamed about a world where machines acquire "super-powers". 
-Today, I'm working hard to make that dream a reality, but how?
-</div>
 
 ![super machine](/img/ComputerVision.png){:class="img-responsive"}
 
 <div style="text-align: justify">
-Maybe, you have heard about Artificial Intelligence (AI), but what about Computer Vision?. That sounds a creepy thing but its only aim is to give computer eyes. 
 
 Computer Vision has a lot of applications. Nevertheless, in this post, I'll only focus on Action Recognition, which in simple words is to determine what a subject is doing in a given video. 
 </div>
