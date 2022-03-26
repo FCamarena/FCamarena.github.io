@@ -50,7 +50,7 @@ googlescholar_username: Ru9n208AAAAJ&hl
 
 # About Section
 # about_title: About Me (Use this to override about section title)
-about_profile_image: Directory of profile image (eg. images/profile.jpg)
+about_profile_image: images/profile.png
 about_content: | # this will include new lines to allow paragraphs
 
   Fernando Camarena obtained his bachelor's and M.Sc. degree in computer science from the Tecnológico de Monterrey, Campus Estado de México. His academic performance allowed him to be regarded as the highest average grade in both degrees. 
