@@ -52,13 +52,11 @@ googlescholar_username: Ru9n208AAAAJ&hl
 # about_title: About Me (Use this to override about section title)
 about_profile_image: Directory of profile image (eg. images/profile.jpg)
 about_content: | # this will include new lines to allow paragraphs
-  Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
 
-  You can even add paragraphs by using empty lines like this and add anything else [markdown](https://www.markdownguide.org/getting-started#what-is-markdown) supports such as
-    - Lists
-    - Tables
-    - <a href="google.com">Links</a>
-    - Images ![alt text](/images/landscape-trees.jpg "Trees")
+  Fernando Camarena obtained his bachelor's and M.Sc. degree in computer science from the Tecnológico de Monterrey, Campus Estado de México. His academic performance allowed him to be regarded as the highest average grade in both degrees. 
+
+  Currently, Fernando Camarena is finishing his Ph.D. at the same institution, where he has excelled in the action recognition domain. At present, Fernando Camarena's research interests are focussed in self-supervised learning combined with few-shot learning.
+ 
 
 content:
   - title: Projects # Title for the section
