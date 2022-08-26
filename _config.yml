@@ -50,12 +50,10 @@ googlescholar_username: Ru9n208AAAAJ&hl
 
 # About Section
 # about_title: About Me (Use this to override about section title)
-about_profile_image: images/profile.png
+about_profile_image: fcamarena.png
 about_content: | # this will include new lines to allow paragraphs
-
-  Fernando Camarena obtained his bachelor's and M.Sc. degree in computer science from the Tecnológico de Monterrey, Campus Estado de México. His academic performance allowed him to be regarded as the highest average grade in both degrees. 
-
-  Currently, Fernando Camarena is finishing his Ph.D. at the same institution, where he has excelled in the action recognition domain. At present, Fernando Camarena's research interests are focussed in self-supervised learning combined with few-shot learning.
+  Fernando Camarena obtained his bachelor’s and M.Sc. degrees in computer science from the Tecnológico de Monterrey, Campus Estado de México. Because of his academic performance, Fernando got the highest average grade in both degrees. Currently, he is pursuing his Ph.D. at the same institution, where he has excelled in the action recognition domain. Its research focuses on self-supervised learning combined with few-shot learning.
+  In the early stages of his career, he worked as an IOS developer to bring creative ideas to life. He is an adjunct professor right now, where he has set up different tasks for bachelor students and led three groups in the construction of artificial intelligence projects.
  
 
 content:
