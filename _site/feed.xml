@@ -1,0 +1,85 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://localhost:4000/</id>
+  <title>Fernando Camarena</title>
+  <subtitle>Personal website showcasing my research in Computer Vision, Machine Learning,  and Artificial Intelligence, focusing on self-supervised and few-shot learning.</subtitle>
+  <updated>2024-12-03T16:04:06-06:00</updated>
+  <author>
+    <name>Fernando Camarena</name>
+    <uri>http://localhost:4000/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="http://localhost:4000/"/>
+  <generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator>
+  <rights> © 2024 Fernando Camarena </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>Welcome to My Academic Portfolio 2</title>
+    <link href="http://localhost:4000/posts/welcome-copy/" rel="alternate" type="text/html" title="Welcome to My Academic Portfolio 2" />
+    <published>2024-12-01T12:00:00-06:00</published>
+  
+    <updated>2024-12-01T12:00:00-06:00</updated>
+  
+    <id>http://localhost:4000/posts/welcome-copy/</id>
+    <content type="text/html" src="http://localhost:4000/posts/welcome-copy/" />
+    <author>
+      <name>Fernando Camarena</name>
+    </author>
+
+  
+    
+    <category term="Featured" />
+    
+  
+
+  <summary>Fernando Camarena
+PhD Candidate in Computer Science | AI Researcher
+
+Welcome to my academic portfolio! I’m a Computer Science researcher at Tecnológico de Monterrey, specializing in Computer Vision and Machine Learning. My work focuses on developing innovative approaches in action recognition using self-supervised and few-shot learning techniques.
+
+🔬 Research Interests
+
+My research lies at the ...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Welcome to My Academic Portfolio</title>
+    <link href="http://localhost:4000/posts/welcome/" rel="alternate" type="text/html" title="Welcome to My Academic Portfolio" />
+    <published>2023-12-01T12:00:00-06:00</published>
+  
+    <updated>2023-12-01T12:00:00-06:00</updated>
+  
+    <id>http://localhost:4000/posts/welcome/</id>
+    <content type="text/html" src="http://localhost:4000/posts/welcome/" />
+    <author>
+      <name>Fernando Camarena</name>
+    </author>
+
+  
+    
+    <category term="Featured" />
+    
+  
+
+  <summary>Fernando Camarena
+PhD Candidate in Computer Science | AI Researcher
+
+Welcome to my academic portfolio! I’m a Computer Science researcher at Tecnológico de Monterrey, specializing in Computer Vision and Machine Learning. My work focuses on developing innovative approaches in action recognition using self-supervised and few-shot learning techniques.
+
+🔬 Research Interests
+
+My research lies at the ...</summary>
+
+  </entry>
+
+</feed>
+
+

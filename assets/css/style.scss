@@ -1,0 +1,17 @@
+---
+---
+
+@import "main";
+
+/* Custom styles */
+#sidebar #avatar img {
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  border: 2px solid rgba(222, 222, 222, 0.7);
+  overflow: hidden;
+  transform: translateZ(0); /* fixed the zoom bug (like Safari) */
+  -webkit-transition: border-color 0.35s ease-in-out;
+  -moz-transition: border-color 0.35s ease-in-out;
+  transition: border-color 0.35s ease-in-out;
+}
