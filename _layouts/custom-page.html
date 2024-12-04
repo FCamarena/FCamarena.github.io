@@ -1,0 +1,73 @@
+---
+layout: default
+---
+
+{% include lang.html %}
+
+<div class="row">
+  <!-- Navigation Panel -->
+  <div class="col-xl-3">
+    <div id="navigation-panel" class="position-sticky" style="top: 2rem;">
+      <h3>Navigation</h3>
+      <nav id="toc" data-toggle="toc">
+        <ul class="nav flex-column">
+          {% assign headers = content | split: '<h' %}
+          {% for header in headers %}
+            {% if header contains '#' %}
+              {% assign headerLevel = header | truncate: 1, '' %}
+              {% if headerLevel == '1' or headerLevel == '2' %}
+                {% assign headerText = header | split: '</h' | first | split: '>' | last | strip %}
+                <li class="nav-item">
+                  <a class="nav-link{% if headerLevel == '2' %} ml-3{% endif %}" href="#{{ headerText | slugify }}">
+                    {{ headerText }}
+                  </a>
+                </li>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="col-xl-9">
+    <article class="px-1">
+      {% if page.layout == 'page' or page.collection == 'tabs' %}
+        {% assign tab_key = page.title | downcase %}
+        {% assign title = site.data.locales[lang].tabs[tab_key] | default: page.title %}
+        <h1 class="dynamic-title">
+          {{ title }}
+        </h1>
+        <div class="content">
+          {{ content }}
+        </div>
+      {% else %}
+        {{ content }}
+      {% endif %}
+    </article>
+  </div>
+</div>
+
+<style>
+#navigation-panel {
+  padding: 1rem;
+  border-right: 1px solid var(--border-color);
+}
+
+#navigation-panel .nav-link {
+  color: var(--text-color);
+  padding: 0.25rem 0;
+}
+
+#navigation-panel .nav-link:hover {
+  color: var(--link-hover-color);
+  text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  #navigation-panel {
+    display: none;
+  }
+}
+</style>
