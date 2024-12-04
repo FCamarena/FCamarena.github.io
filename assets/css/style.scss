@@ -1,10 +1,10 @@
 ---
 ---
 
-@import 'main';
+@use 'main';
 
 // Add custom styles
-@import 'custom-styles';
+@use 'custom-styles';
 
 /* Custom styles */
 #sidebar #avatar img {

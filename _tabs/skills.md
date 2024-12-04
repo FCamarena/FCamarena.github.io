@@ -2,6 +2,7 @@
 layout: page
 icon: fas fa-code
 order: 4
+excerpt_separator: <!--more-->
 ---
 
 <div class="page-content-wrapper">

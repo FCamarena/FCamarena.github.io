@@ -3,6 +3,7 @@ layout: page
 icon: fas fa-briefcase
 order: 3
 toc: true
+excerpt_separator: <!--more-->
 ---
 
 <div class="page-content-wrapper">
