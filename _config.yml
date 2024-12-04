@@ -39,13 +39,12 @@ social:
   email: fernando@camarenat.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://github.com/FCamarena
-    - https://www.linkedin.com/in/fernando-camarena-86b473119
-    - https://orcid.org/0000-0003-0888-2098
-    - https://scholar.google.com/citations?user=Ru9n208AAAAJ&hl
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    - https://github.com/FCamarena # GitHub
+    - https://www.linkedin.com/in/fernando-camarena-86b473119 # LinkedIn
+    - https://orcid.org/0000-0003-0888-2098 # ORCID
+    - https://scholar.google.com/citations?user=Ru9n208AAAAJ&hl # Google Scholar
+    - https://www.researchgate.net/profile/Fernando-Camarena # ResearchGate
+    - https://twitter.com/FerCamarenaT # Twitter
 
 # Site Verification Settings
 webmaster_verifications:

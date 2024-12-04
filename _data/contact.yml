@@ -2,39 +2,24 @@
 
 - type: github
   icon: "fab fa-github"
+  url: https://github.com/FCamarena
 
-- type: twitter
-  icon: "fa-brands fa-x-twitter"
+- type: linkedin
+  icon: "fab fa-linkedin"
+  url: https://www.linkedin.com/in/fernando-camarena-86b473119
+
+- type: custom
+  icon: "fab fa-orcid"
+  url: https://orcid.org/0000-0003-0888-2098
+
+- type: custom
+  icon: "fas fa-graduation-cap"
+  url: https://scholar.google.com/citations?user=Ru9n208AAAAJ&hl
+
+- type: custom
+  icon: "fab fa-researchgate"
+  url: https://www.researchgate.net/profile/Fernando-Camarena
 
 - type: email
   icon: "fas fa-envelope"
-  noblank: true # open link in current tab
-
-- type: rss
-  icon: "fas fa-rss"
   noblank: true
-# Uncomment and complete the url below to enable more contact options
-#
-# - type: mastodon
-#   icon: 'fab fa-mastodon'   # icons powered by <https://fontawesome.com/>
-#   url:  ''                  # Fill with your Mastodon account page, rel="me" will be applied for verification
-#
-# - type: linkedin
-#   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
-#   url:  ''                  # Fill with your Linkedin homepage
-#
-# - type: stack-overflow
-#   icon: 'fab fa-stack-overflow'
-#   url:  ''                  # Fill with your stackoverflow homepage
-#
-# - type: bluesky
-#   icon: 'fa-brands fa-bluesky'
-#   url: ''                   # Fill with your Bluesky profile link
-#
-# - type: reddit
-#   icon: 'fa-brands fa-reddit'
-#   url: ''                   # Fill with your Reddit profile link
-#
-# - type: threads
-#   icon: 'fa-brands fa-threads'
-#   url: ''                   # Fill with your Threads profile link
