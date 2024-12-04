@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Fernando Camarena</title>
   <subtitle>Personal website showcasing my research in Computer Vision, Machine Learning,  and Artificial Intelligence, focusing on self-supervised and few-shot learning.</subtitle>
-  <updated>2024-12-03T18:20:36-06:00</updated>
+  <updated>2024-12-03T18:26:48-06:00</updated>
   <author>
     <name>Fernando Camarena</name>
     <uri>http://localhost:4000/</uri>
@@ -46,6 +46,36 @@ Welcome to my academic portfolio! I’m a Computer Science researcher at Tecnol�
 🔬 Research Interests
 
 My research lies at the ...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Advancing Human Action Recognition Through Knowledge Distillation</title>
+    <link href="http://localhost:4000/posts/action-recognition-research/" rel="alternate" type="text/html" title="Advancing Human Action Recognition Through Knowledge Distillation" />
+    <published>2024-01-08T11:00:00-06:00</published>
+  
+    <updated>2024-01-08T11:00:00-06:00</updated>
+  
+    <id>http://localhost:4000/posts/action-recognition-research/</id>
+    <content type="text/html" src="http://localhost:4000/posts/action-recognition-research/" />
+    <author>
+      <name>Fernando Camarena</name>
+    </author>
+
+  
+    
+    <category term="Research" />
+    
+    <category term="Computer Vision" />
+    
+  
+
+  <summary>Introduction to Action Recognition
+
+Human action recognition in videos is a fundamental challenge in computer vision with wide-ranging applications, from surveillance systems to human-computer interaction. My research focuses on enhancing the training of action recognition models through innovative approaches in knowledge distillation and self-supervised learning.
+
+The Challenge of Video Unders...</summary>
 
   </entry>
 
