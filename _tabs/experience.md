@@ -5,6 +5,38 @@ order: 3
 toc: true
 ---
 
+<div class="page-content-wrapper">
+    <nav id="custom-sidebar">
+        <div class="sidebar-header">
+            <h4 class="mb-0">Navigation</h4>
+        </div>
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href="#professional-experience">Professional Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#academic-experience">Academic Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#industry-experience">Industry Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#professional-development">Professional Development</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#awards--honors">Awards & Honors</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#professional-service">Professional Service</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <div class="main-content markdown-content">
+        {% capture my_content %}
 # Professional Experience
 
 ## Academic Experience
@@ -129,17 +161,99 @@ toc: true
 
 ## Awards & Honors
 
-- List your academic awards
-- Research grants
-- Scholarships
-- Competition wins
+- Second place in "José Negrete" best thesis award from Mexican Society for AI
+- Medal of Merit at PhD graduation (GPA: 99.89/100)
+- Outstanding thesis recognition
+- Highest average grade in Master's program (December 2018)
+- Academic Excellence Award in Bachelor's program
+- Multiple conference presentation awards
 
 ## Professional Service
 
 ### Reviewer
-- Conference Name (Year)
-- Journal Name (Year)
+- Journal of Imaging (2023-Present)
+- Mathematical and Computational Applications (2022-Present)
+- Pattern Analysis and Applications (2021-Present)
 
 ### Teaching Assistant
-- Course Name (Semester, Year)
-- Course Name (Semester, Year)
+- Advanced Computer Vision (2023)
+- Machine Learning Fundamentals (2022)
+- Data Structures and Algorithms (2021)
+        {% endcapture %}
+        {{ my_content | markdownify }}
+    </div>
+</div>
+
+<style>
+.page-content-wrapper {
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+}
+
+#custom-sidebar {
+    width: 250px;
+    height: calc(100vh - 5rem);
+    background: var(--sidebar-bg);
+    padding: 20px;
+    position: sticky;
+    top: 5rem;
+    border-right: 1px solid var(--border-color);
+    margin-left: -2rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.main-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.markdown-content {
+    padding-right: 2rem;
+}
+
+.nav-link {
+    color: var(--text-color);
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    background: var(--hover-bg);
+    border-radius: 5px;
+}
+
+.nav-link.active {
+    color: var(--link-color);
+    background: var(--hover-bg);
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Highlight current section in navigation
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('h1, h2');
+    
+    function updateActiveSection() {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.getBoundingClientRect().top;
+            if (sectionTop <= 100) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').substring(1) === current) {
+                link.classList.add('active');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', updateActiveSection);
+    updateActiveSection(); // Initial call
+});
+</script>
