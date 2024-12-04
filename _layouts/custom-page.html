@@ -71,3 +71,77 @@ layout: default
   }
 }
 </style>
+            {% else %}
+                {{ content }}
+            {% endif %}
+        </article>
+    </div>
+</div>
+
+<button id="sidebar-toggle" aria-label="Toggle Sidebar">
+    <i class="fas fa-bars"></i>
+</button>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const sidebarToggle = document.getElementById('sidebar-toggle');
+    const sidebar = document.getElementById('custom-sidebar');
+    const overlay = document.querySelector('.sidebar-overlay');
+    const wrapper = document.querySelector('.page-content-wrapper');
+    let resizeTimer;
+
+    function toggleSidebar() {
+        sidebar.classList.toggle('active');
+        overlay.classList.toggle('active');
+        wrapper.classList.toggle('sidebar-active');
+    }
+
+    function closeSidebar() {
+        sidebar.classList.remove('active');
+        overlay.classList.remove('active');
+        wrapper.classList.remove('sidebar-active');
+    }
+
+    function handleResize() {
+        // Add class to disable transitions during resize
+        document.body.classList.add('resize-transition-disabled');
+        
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+            // Remove the class after resize is complete
+            document.body.classList.remove('resize-transition-disabled');
+            
+            if (window.innerWidth > 850) {
+                closeSidebar();
+            }
+        }, 100);
+    }
+
+    // Toggle sidebar when clicking the button
+    sidebarToggle.addEventListener('click', function(e) {
+        e.stopPropagation();
+        toggleSidebar();
+    });
+
+    // Close sidebar when clicking the overlay
+    overlay.addEventListener('click', closeSidebar);
+
+    // Close sidebar when clicking a navigation link (for mobile)
+    const navLinks = sidebar.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            if (window.innerWidth <= 850) {
+                closeSidebar();
+            }
+        });
+    });
+
+    // Handle window resize
+    window.addEventListener('resize', handleResize);
+
+    // Initial check for mobile view
+    if (window.innerWidth <= 850) {
+        closeSidebar();
+    }
+});
+</script>
